@@ -1,0 +1,91 @@
+# Microsemi I/O Physical Design Constraints file
+
+# User I/O Constraints file 
+
+# Version: v12.5 12.900.10.16
+
+# Family: SmartFusion2 , Die: M2S060 , Package: 484 FBGA
+
+# Date generated: Sun Nov 29 17:03:22 2020 
+
+# 
+# User Locked I/O Bank Settings
+# 
+
+# 
+# Unlocked I/O Bank Settings
+# The I/O Bank Settings can be locked by directly editing this file
+# or by making changes in the I/O Attribute Editor
+# 
+
+# 
+# User Locked I/O settings
+# 
+
+# 
+# Dedicated Peripheral I/O Settings
+# 
+
+set_io I2C_0_SCL         \
+    -SCHMITT_TRIGGER On  \
+    -DIRECTION INOUT
+
+
+set_io I2C_0_SDA         \
+    -SCHMITT_TRIGGER On  \
+    -DIRECTION INOUT
+
+
+set_io I2C_1_SCL         \
+    -SCHMITT_TRIGGER On  \
+    -DIRECTION INOUT
+
+
+set_io I2C_1_SDA         \
+    -SCHMITT_TRIGGER On  \
+    -DIRECTION INOUT
+
+
+set_io MMUART_0_RXD   \
+    -RES_PULL Up      \
+    -DIRECTION INPUT
+
+
+set_io MMUART_0_TXD    \
+    -RES_PULL Up       \
+    -DIRECTION OUTPUT
+
+
+set_io MMUART_1_RXD   \
+    -RES_PULL Up      \
+    -DIRECTION INPUT
+
+
+set_io MMUART_1_TXD    \
+    -RES_PULL Up       \
+    -DIRECTION OUTPUT
+
+
+
+# 
+# Unlocked I/O settings
+# The I/Os in this section are unplaced or placed but are not locked
+# the other listed attributes have been applied
+# 
+
+
+#
+#Ports using Dedicated Pins
+
+#
+
+set_io DEVRST_N       \
+    -pinname R15      \
+    -DIRECTION INPUT
+
+
+set_io XTL            \
+    -pinname AB21     \
+    -DIRECTION INPUT
+
+

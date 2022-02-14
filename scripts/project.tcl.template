@@ -1,0 +1,33 @@
+# =================================================================================================================
+#
+# Adjust the following variables below:
+#   2) project name
+#   1) project location
+#   3) location of your local GIT repository 
+#   4) core location
+#
+#   Windows: note that path uses / instead of \ 
+#
+# =================================================================================================================
+#
+# SET PROJECT NAME
+set project_name     MPD_GatingGrid
+#
+# SET YOUR PROJECT LOCATION
+set project_location C:/projects/$project_name
+#
+# SET YOUR GIT LOCATION HERE
+set git_location    C:/projects/som_tcl
+
+
+# ================================================================================================================
+# DO NOT MODIFY
+# ================================================================================================================
+# Some abbreviations used in the other scripts
+set root_module      gg_top
+set src_base         $git_location/src
+set constraints_base $git_location/constraints
+set modules_base     $src_base/modules
+set definitions_base $src_base/definitions
+set cores_base       $git_location/cores
+set uboot_base       $git_location/uboot

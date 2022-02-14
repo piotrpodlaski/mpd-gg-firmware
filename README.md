@@ -1,0 +1,2 @@
+# HOWTO
+In order to initialize project first copy `scripts/project.tcl.template` as `scripts/project.tcl` and adjust paths according to instructions in the file. Next, open Libero and and run `scripts/create_gg.tcl` script by `Project -> Execute Script`. The script will set up the whole project and allow you to develop and compile the design.
